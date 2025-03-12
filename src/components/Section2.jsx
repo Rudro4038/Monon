@@ -56,6 +56,7 @@ export default function Section2() {
         </div>
       </div>
 
+
       {/* Text Section (40%) */}
       <div className="w-[60%] p-6 flex flex-col justify-center text-left">
         <h2 className="text-3xl text-[rgb(17,31,32)] font-semibold">
