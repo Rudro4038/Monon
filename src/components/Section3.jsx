@@ -1,46 +1,53 @@
+import React from 'react';
 
-export default function Section3() {
+const Footer = () => {
   return (
-    <div
-      className="grid grid-cols-12 max-h-[55vh] h-[55vh] pl-8 pr-8"
-      style={{ background: "#003D3F" }}
-    >
-      {/* Left Column */}
-      <div className="col-span-4 h-full overflow-hidden pt-12">
-        <h2 className="block text-left text-bold font-extrabold text-black">
-          Contact Us
-        </h2>
-        <div className="w-full text-black flex  items-center font-medium">
-          <span className="material-icons">phone_in_talk</span>+8801772694038
+    <footer className="bg-[#E3D2C3] text-[rgb(17,31,32)] py-8 px-6">
+      <div className="container mx-auto flex justify-between text-left">
+        {/* Contact Information */}
+        <div>
+          <h2 className="text-lg font-bold mb-2">Contact Us</h2>
+          <p className="flex items-center mb-1">
+            <span className="mr-2">📞</span> +8801772694038
+          </p>
+          <p className="flex items-center mb-1">
+            <span className="mr-2">💬</span> +8801772694038
+          </p>
+          <p className="flex items-center">
+            <span className="mr-2">✉️</span> monon@support.com
+          </p>
         </div>
-        <div className="w-full text-black flex  items-center font-medium">
-          <span className="material-icons">mail</span>monon@support.com
+
+        {/* Social Media Icons */}
+        <div>
+          <h2 className="text-lg font-bold mb-2">Socials</h2>
+          <div className="flex space-x-4">
+            <a href="#" className="text-2xl">📘</a>
+            <a href="#" className="text-2xl">📸</a>
+            <a href="#" className="text-2xl">▶️</a>
+          </div>
         </div>
-        <div className="w-full text-black flex  items-center font-medium">
-          <i className="fa-brands fa-whatsapp"></i>+8801772694038
+
+        {/* Newsletter Subscription */}
+        <div>
+          <h2 className="text-lg font-bold mb-2">Our Newsletter</h2>
+          <form className="flex">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="p-2 rounded-l bg-gray-200 text-black"
+            />
+            <button
+              type="submit"
+              className="p-2 bg-teal-500 text-white rounded-r"
+            >
+              Send
+            </button>
+          </form>
         </div>
       </div>
-
-      {/* Center Column */}
-      <div className="col-span-4 h-full overflow-hidden pt-12">
-        <h2 className="block text-left text-bold font-extrabold text-black">
-          Social Media
-        </h2>
-        <div className="w-full h-16 text-black font-medium  text-left">
-          <div className="inline m-2"> <i className="fa-brands fa-facebook"></i></div>
-
-          {/* Column 2 */}
-          <div className="inline m-2"><i className="fa-brands fa-square-instagram"></i></div>
-
-          {/* Column 3 */}
-          <div className="inline m-2"><i className="fa-brands fa-youtube"></i></div>
-        </div>
-      </div>
-
-      {/* Right Column
-      <div className="col-span-4 h-full flex flex-col items-start justify-center text-black p-8">
-        <NewsLetterBox />
-      </div> */}
-    </div>
+    </footer>
   );
-}
+};
+
+export default Footer;
